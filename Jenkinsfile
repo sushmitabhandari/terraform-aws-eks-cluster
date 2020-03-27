@@ -49,7 +49,7 @@ pipeline {
 	 stage('create cluster') {
             steps {
 	      sh 'sudo rm -rf eks-1'
-	      sh 'git clone https://github.com/sushmitabhandari/eks-1.git'
+	      sh 'git clone https://github.com/sushmitabhandari/terraform-aws-eks-cluster.git'
 	      //sh 'cd /var/lib/jenkins/workspace/eks/terraform-script-eks'
 	     // sh 'sudo ls -al'
               sh 'sudo rm -rf .terraform'
