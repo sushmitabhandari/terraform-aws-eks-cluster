@@ -12,10 +12,12 @@ variable "eks-worker-ami" {
 
 variable "worker-node-instance_type" {
   description = "enter worker node instance type"
+  default = "t2.micro"
 }
 
 variable "ssh_key_pair" {
    description = "Enter SSH keypair name that already exist in the account"
+  default = "home"
 
 }
 
@@ -43,5 +45,6 @@ variable "eks_version" {
 
 variable "region" {
    description = "Enter region you want to create EKS cluster in"
+  default = "ap-south-1"
 
 }
